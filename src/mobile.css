@@ -1,5 +1,22 @@
+/* Hide mobile text on desktop */
+.mobile-button-text {
+  display: none !important;
+}
+
+.desktop-button-text {
+  display: inline !important;
+}
+
 /* Mobile-only styles - only apply to screens smaller than 768px */
 @media (max-width: 768px) {
+  /* Show mobile text, hide desktop text */
+  .desktop-button-text {
+    display: none !important;
+  }
+  
+  .mobile-button-text {
+    display: inline !important;
+  }
   .mobile-container {
     padding: 1rem 0.5rem 4rem 0.5rem !important;
   }
@@ -31,10 +48,11 @@
   
   
   .mobile-button {
-    padding: 0.75rem 0.5rem !important;
-    font-size: 0.65rem !important;
+    padding: 0.6rem 2rem !important;
+    font-size: 1rem !important;
     white-space: nowrap !important;
     min-width: auto !important;
+    letter-spacing: 0.05em !important;
   }
   
   .mobile-footer {
@@ -43,38 +61,42 @@
   }
 }
 
-/* Extra small screens (iPhone SE, small phones) */
-@media (max-width: 400px) {
+/* Small screens (390px - 400px: iPhone 12/13 mini) */
+@media (max-width: 400px) and (min-width: 376px) {
   .mobile-button {
-    padding: 0.5rem 0.2rem !important;
-    font-size: 0.55rem !important;
-    letter-spacing: 0.01em !important;
+    padding: 0.55rem 1.75rem !important;
+    font-size: 0.9rem !important;
+    letter-spacing: 0.03em !important;
     min-width: auto !important;
     flex-shrink: 0 !important;
   }
   
   .mobile-content > div:nth-child(3) form > div {
     min-width: auto !important;
-    width: 92% !important;
-    max-width: 92% !important;
+    width: 40rem !important;
+    max-width: 40rem !important;
+  }
+  
+  .mobile-heading {
+    font-size: 2.2rem !important;
+  }
+}
+
+/* Extra small screens (iPhone SE 375px and smaller) */
+@media (max-width: 375px) {
+  .mobile-button {
+    padding: 0.5rem 1.5rem !important;
+    font-size: 0.8rem !important;
+    letter-spacing: 0.02em !important;
+    font-weight: 600 !important;
+  }
+  
+  .mobile-content > div:nth-child(3) form > div {
+    width: 40rem !important;
+    max-width: 40rem !important;
   }
   
   .mobile-heading {
     font-size: 2rem !important;
-  }
-}
-
-/* Ultra small screens (iPhone SE 375px and smaller) */
-@media (max-width: 375px) {
-  .mobile-button {
-    padding: 0.4rem 0.15rem !important;
-    font-size: 0.5rem !important;
-    letter-spacing: 0 !important;
-    font-weight: 700 !important;
-  }
-  
-  .mobile-content > div:nth-child(3) form > div {
-    width: 90% !important;
-    max-width: 90% !important;
   }
 }

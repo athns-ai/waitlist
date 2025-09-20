@@ -164,7 +164,8 @@ const WaitlistSignup = ({ onSubmit }) => {
                   e.target.style.color = 'black'
                 }}
               >
-                JOIN WAITLIST
+                <span className="desktop-button-text">JOIN WAITLIST</span>
+                <span className="mobile-button-text">JOIN</span>
               </button>
             </div>
           </form>
