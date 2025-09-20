@@ -31,13 +31,50 @@
   
   
   .mobile-button {
-    padding: 0.75rem 1rem !important;
-    font-size: 0.75rem !important;
+    padding: 0.75rem 0.5rem !important;
+    font-size: 0.65rem !important;
     white-space: nowrap !important;
+    min-width: auto !important;
   }
   
   .mobile-footer {
     padding: 0.75rem !important;
     font-size: 0.75rem !important;
+  }
+}
+
+/* Extra small screens (iPhone SE, small phones) */
+@media (max-width: 400px) {
+  .mobile-button {
+    padding: 0.5rem 0.2rem !important;
+    font-size: 0.55rem !important;
+    letter-spacing: 0.01em !important;
+    min-width: auto !important;
+    flex-shrink: 0 !important;
+  }
+  
+  .mobile-content > div:nth-child(3) form > div {
+    min-width: auto !important;
+    width: 92% !important;
+    max-width: 92% !important;
+  }
+  
+  .mobile-heading {
+    font-size: 2rem !important;
+  }
+}
+
+/* Ultra small screens (iPhone SE 375px and smaller) */
+@media (max-width: 375px) {
+  .mobile-button {
+    padding: 0.4rem 0.15rem !important;
+    font-size: 0.5rem !important;
+    letter-spacing: 0 !important;
+    font-weight: 700 !important;
+  }
+  
+  .mobile-content > div:nth-child(3) form > div {
+    width: 90% !important;
+    max-width: 90% !important;
   }
 }
