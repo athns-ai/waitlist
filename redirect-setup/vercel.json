@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://waitlist.athens-ai.tech/$1",
+      "permanent": false
+    }
+  ]
+}
