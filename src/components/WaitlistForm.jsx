@@ -75,7 +75,7 @@ const WaitlistSignup = ({ onSubmit }) => {
       flex: 1,
       backgroundColor: 'transparent',
       color: 'white',
-      padding: '0.75rem 1.5rem',
+      padding: '0.75rem 0.3rem 0.75rem 1.5rem',
       outline: 'none',
       border: 'none',
       fontSize: '1rem'
