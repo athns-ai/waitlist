@@ -117,11 +117,44 @@ const WaitlistSignup = ({ onSubmit }) => {
     },
     footerBold: {
       fontWeight: 'bold'
+    },
+    backButton: {
+      position: 'absolute',
+      top: '1.5rem',
+      left: '1.5rem',
+      backgroundColor: 'transparent',
+      color: '#FFF4EB',
+      border: '1px solid #FFF4EB',
+      padding: '0.5rem 1rem',
+      borderRadius: '9999px',
+      cursor: 'pointer',
+      fontSize: '0.875rem',
+      fontWeight: '500',
+      letterSpacing: '0.05em',
+      fontFamily: 'Helvetica, Arial, sans-serif',
+      transition: 'all 0.3s ease',
+      textDecoration: 'none',
+      display: 'inline-block'
     }
   }
 
   return (
     <div style={styles.container} className="mobile-container">
+      <a 
+        href="https://athenslabs.ai" 
+        style={styles.backButton}
+        className="mobile-back-button"
+        onMouseEnter={(e) => {
+          e.target.style.backgroundColor = '#FFF4EB'
+          e.target.style.color = 'black'
+        }}
+        onMouseLeave={(e) => {
+          e.target.style.backgroundColor = 'transparent'
+          e.target.style.color = '#FFF4EB'
+        }}
+      >
+        ← Back
+      </a>
       <div style={styles.content} className="mobile-content">
         {/* Logo */}
         <div style={styles.logoSection}>
@@ -250,11 +283,44 @@ const WaitlistSuccess = () => {
     },
     footerBold: {
       fontWeight: 'bold'
+    },
+    backButton: {
+      position: 'absolute',
+      top: '1.5rem',
+      left: '1.5rem',
+      backgroundColor: 'transparent',
+      color: '#FFF4EB',
+      border: '1px solid #FFF4EB',
+      padding: '0.5rem 1rem',
+      borderRadius: '9999px',
+      cursor: 'pointer',
+      fontSize: '0.875rem',
+      fontWeight: '500',
+      letterSpacing: '0.05em',
+      fontFamily: 'Helvetica, Arial, sans-serif',
+      transition: 'all 0.3s ease',
+      textDecoration: 'none',
+      display: 'inline-block'
     }
   }
 
   return (
     <div style={styles.container} className="mobile-container">
+      <a 
+        href="https://athenslabs.ai" 
+        style={styles.backButton}
+        className="mobile-back-button"
+        onMouseEnter={(e) => {
+          e.target.style.backgroundColor = '#FFF4EB'
+          e.target.style.color = 'black'
+        }}
+        onMouseLeave={(e) => {
+          e.target.style.backgroundColor = 'transparent'
+          e.target.style.color = '#FFF4EB'
+        }}
+      >
+        ← Back
+      </a>
       <div style={styles.content} className="mobile-content">
         {/* Logo */}
         <div style={styles.logoSection}>
